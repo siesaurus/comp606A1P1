@@ -6,7 +6,7 @@
 <form action="/Login.php">
 
 <input type ="text" placeholder="Email" name = "email">
-<input type = "text" placeholder="Password" name = "pwd">
+<input type = "password" placeholder="Password" name = "pwd">
 <button type = "submit">Login</button>
 </form>
 </div>

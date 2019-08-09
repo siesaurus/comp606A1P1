@@ -8,11 +8,28 @@
 <div class ="container col-md-4">
     <h2>Enter details below</h2>
 <form action="Login.php" method="post">
-    <input type="text" name="fname">
-    <input type="text" name="lName">
-    <input type="text" name="email">
-    <input type="text" name="password">
-    <input type="text" name="confirmpwd">
+    <table>
+        <tr>
+            <td>First name: </td>
+            <td><input type="text" name="FirstName" id="fname"></td>
+        </tr>
+        <tr>
+            <td>Last name: </td>
+            <td><input type="text" name="LastName" id ="lname"></td>
+        </tr>
+        <tr>
+            <td>Email address:</td>
+            <td><input type="text" name="Email" id = "Email"></td>
+        </tr>
+        <tr>
+            <td>Password: </td>
+            <td> <input type="password" name="password"></td>
+        </tr>
+        <tr>
+        <td><input type="submit" value = "Submit"></td>
+        </tr>
+        </table>
+        </form>
 
 <?php
 //defined variables and set to empty
@@ -24,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST"){
     $lname = test_input($_POST["lname"]);
     $email = test_input($_POST["email"]);
     $password = test_input($_POST["password"]);
-    $confirmpwd = test_input($_POST["confirmpwd"]);
+
 }
 
 function test_input($data) {
