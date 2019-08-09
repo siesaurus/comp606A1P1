@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 08, 2019 at 12:01 AM
+-- Generation Time: Aug 09, 2019 at 05:02 AM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -33,6 +33,13 @@ CREATE TABLE `password` (
   `Password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `password`
+--
+
+INSERT INTO `password` (`Email`, `Password`) VALUES
+('gmail@easyas.com', '');
+
 -- --------------------------------------------------------
 
 --
@@ -42,8 +49,22 @@ CREATE TABLE `password` (
 CREATE TABLE `user` (
   `FirstName` varchar(15) NOT NULL,
   `LastName` varchar(15) NOT NULL,
-  `Email` varchar(140) NOT NULL
+  `Email` varchar(140) NOT NULL,
+  `Password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`FirstName`, `LastName`, `Email`, `Password`) VALUES
+('efg', 'hij', '12312@gmail.com', ''),
+('abc', '123', '123@abc.com', ''),
+('abc', '123', 'easyas@gmail.com', ''),
+('abc', '1231', 'gfwi@gwieo.com', ''),
+('123', 'abc', 'gmail@easyas.com', ''),
+('matt', 'tash', 'mat@tash.com', ''),
+('sie', 'pie', 'sie@pie.com', '');
 
 --
 -- Indexes for dumped tables

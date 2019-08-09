@@ -6,10 +6,10 @@
 <body>
 <?php include "nav.php"; ?>
 
-<form action="/Login.php">
+<form action="Login.php">
 
 <input type ="text" placeholder="Email" name = "email">
-<input type = "password" placeholder="Password" name = "pwd">
+<input type = "password" placeholder="Password" name = "Passwd">
 <button type = "submit">Login</button>
 
 
