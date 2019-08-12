@@ -1,6 +1,5 @@
 <?php
-require_once("header.php");
-include("nav.php");
+include("header.php");
 include("dbconnect.php");
 
 $email = $_POST['Email'];
@@ -25,11 +24,11 @@ if ($stmt = $mysqli->prepare($sql)) {
                     $_SESSION['Email'] = $email;
                     header('location: welcome.php');
                 } else{ 
-                    Echo "The password you entered was incorrect";
+                    Echo "The password you entered was incorrect!";
                 }
             }
         } else{ 
-            Echo "No account with that email found";
+            Echo "Sorry, no account with that email found! Please make sure you have registered.";
         }
     } else{ 
         echo "Oops! Something went wrong. Please try again later"; 

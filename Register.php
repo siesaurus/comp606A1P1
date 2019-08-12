@@ -1,7 +1,7 @@
 <?php 
-require_once("header.php");
+include("header.php");
 require_once("dbconnect.php");
-include("nav.php");
+
 $fname = $_POST['FirstName'];
 $lname =$_POST['LastName'];
 $email = $_POST['Email'];
@@ -38,5 +38,5 @@ $stmt = $mysqli->prepare($SELECT);
       //https://www.codeandcourse.com/2018/03/how-to-connect-html-register-form-to-mysql-database-with-php/
       //got stuck on correct way to insert into database
     }
-require_once("footer.php");
+
 ?>

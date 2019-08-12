@@ -1,14 +1,13 @@
-<?php require_once("header.php"); ?>
+<?php include("header.php");?>
+<link ref style.css>
 <!DOCTYPE html>
 <html>
-<head>
 <title>Home</title>
+
 <body>
-<?php include "nav.php"; ?>
-
-
-
-
-<?php require_once("footer.php"); ?>
+Weeeeeeelcome back!
 </body>
+
 </html>
+
+

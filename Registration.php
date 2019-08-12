@@ -1,12 +1,11 @@
-<?php require_once("header.php"); ?>
-<?php include "nav.php"; ?>
+<?php include("header.php");?>
 <!DOCTYPE html>
 <html>
 <head>
-<title>Register Now</title>
 <body>
-<div class ="container col-md-4">
-    <h2>Enter details below</h2>
+<title>Registration</title><div class ="container col-md-4">
+    <h1>Register Now</h1>
+    <p> Please enter your details below</p>
 <form action="Register.php" method="POST">
     <table>
         <tr>
@@ -31,28 +30,6 @@
         </table>
         </form>
 
-</*?php
-//defined variables and set to empty
 
-$fname = $lname = $email = $password = $confirmpwd = "";
-
-if ($_SERVER["REQUEST_METHOD"]=="POST"){
-    $fname = test_input($_POST["fname"]);
-    $lname = test_input($_POST["lname"]);
-    $email = test_input($_POST["email"]);
-    $password = test_input($_POST["password"]);
-
-}
-
-function test_input($data) {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
-?*/>
-
-
-<?php require_once("footer.php"); ?>
 </body>
 </html>

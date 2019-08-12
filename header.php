@@ -1,11 +1,17 @@
-<?php 
+<?php
+
 session_start();
+
 ini_set("error_reporting", E_ALL & ~E_NOTICE);
+include("nav.php");
+// in the <style> tag below we generate css rules for body and h1 tags
+// the values used by these rules will come from session variables that hold 
+// user preference values
 
 ?>
 
 <!doctype html>
-<<html lang="en">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,14 +22,4 @@ ini_set("error_reporting", E_ALL & ~E_NOTICE);
 <link rel="stylesheet" href="style.css">
 <title>Sessions Example</title>
 </head>
-<body>
 
-<style>
-body{
-    background-color: <?php echo $_SESSION['backgroundColor'] ?>;
-}
-
-h1{
-    color: <?php echo $_SESSION['headingColor'] ?>;
-}
-</style>
