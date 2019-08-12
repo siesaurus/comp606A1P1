@@ -1,3 +1,10 @@
+<!-- 
+    Takes user input using POST from the login page/login nav feature and checks it using sql statement
+    First checks that the email entered does exist within the database; if not, prompts error message.
+    If the email address is found, verifies the entered password against the stored hashed password.
+    If the password is correct, changes session state to logged in and directs to welcome.php
+    otherwise, prompts password incorrect message
+ -->
 <?php
 include("header.php");
 include("dbconnect.php");
@@ -36,5 +43,7 @@ if ($stmt = $mysqli->prepare($sql)) {
 }
 $stmt->close();
 
-//https://www.tutorialrepublic.com/php-tutorial/php-mysql-login-system.php
+//https://www.tutorialrepublic.com/php-tutorial/php-mysql-login-system.php 
+//Understood the process of what I was trying to do but was struggling to get the password verify to work correctly.
+//Referred to the above URL.
 ?>

@@ -1,3 +1,6 @@
+<!-- 
+    Creates connection to database for login/registration and redirects user to sitedown.php if connection fails.
+ -->
 <?php
 //sets error reporting to blank
 error_reporting(0);

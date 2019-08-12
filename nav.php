@@ -1,3 +1,7 @@
+<!-- 
+    Navbar with the available, easily accessible buttons 
+    Features navbar login which directs to login.php also
+ -->
 <div class ="topnav" id="navbarNav">
 <a href="Home.php">Home</a>
 <a href="LoginPage.php">Login</a>

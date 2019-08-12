@@ -1,13 +1,10 @@
+<!-- 
+    Header - includes nav.php on all pages where referenced and design features.  
+ -->
 <?php
-
-session_start();
-
-ini_set("error_reporting", E_ALL & ~E_NOTICE);
 include("nav.php");
 // in the <style> tag below we generate css rules for body and h1 tags
-// the values used by these rules will come from session variables that hold 
-// user preference values
-
+//as per in class examples
 ?>
 
 <!doctype html>

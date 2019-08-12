@@ -1,3 +1,12 @@
+<!-- 
+    Register.php page - connects to the database and displays error message if connection fails.
+    Gets required parameters from POST (Registration.php).
+    Sets SQL statements - first to check if the email address already exists, second to insert into user table.
+    Statements - prepares, binds parameters, executes the query, binds and stores the result and sets rnum based on whether or not the email was found.
+    If the email was not found, the first query closes and the insert statement begins with the parameters for firstname, lastname, email and password.
+    Password is then hashed using PASSWORD_DEFAULT(bcrypt).
+    Execute inserts the values into the user table and then displays success message for registering users.
+ -->
 <?php 
 include("header.php");
 require_once("dbconnect.php");

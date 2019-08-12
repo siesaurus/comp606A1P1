@@ -1,3 +1,9 @@
+<!-- 
+-Registration form
+-Takes user input and processes with POST 
+"Submit" button action accesses Register.php
+ -->
+
 <?php include("header.php");?>
 <!DOCTYPE html>
 <html>
@@ -29,7 +35,5 @@
         </tr>
         </table>
         </form>
-
-
 </body>
 </html>

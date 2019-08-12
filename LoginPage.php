@@ -1,3 +1,7 @@
+<!-- 
+    Login page form
+    Has user inputs for email address and password - submit button actions login.php
+ -->
 <?php include("header.php");?>
 <!DOCTYPE html>
 <html>

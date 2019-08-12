@@ -1,6 +1,9 @@
 <?php
 
-// https://www.tutorialrepublic.com/php-tutorial/php-mysql-login-system.php
+// As per https://www.tutorialrepublic.com/php-tutorial/php-mysql-login-system.php welcome.php
+//Uses session info from login.php to display user email as confirmation
+//Provides logout option
+
 // Initialize the session
 session_start();
  
@@ -26,7 +29,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <h1>Hi, <b><?php echo htmlspecialchars($_SESSION['Email']); ?></b>. Welcome to our site.</h1>
     </div>
     <p>
-        <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
         <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
     </p>
 </body>
