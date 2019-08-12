@@ -1,12 +1,12 @@
 <div class ="topnav" id="navbarNav">
 <a href="Home.php">Home</a>
 <a href="LoginPage.php">Login</a>
-<a href="Register.php">Register</a>
+<a href="Registration.php">Register</a>
 <div class="login-container">
-<form action="/Login.php">
+<form action="Login.php" method = "POST">
 
-<input type ="text" placeholder="Email" name = "email">
-<input type = "text" placeholder="Password" name = "Passwd">
+<input type ="text" placeholder="Email" name = "Email">
+<input type = "password" placeholder="Password" name = "Passwd">
 <button type = "submit">Login</button>
 </form>
 </div>

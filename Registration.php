@@ -1,10 +1,10 @@
 <?php require_once("header.php"); ?>
+<?php include "nav.php"; ?>
 <!DOCTYPE html>
 <html>
 <head>
 <title>Register Now</title>
 <body>
-<?php include "nav.php"; ?>
 <div class ="container col-md-4">
     <h2>Enter details below</h2>
 <form action="Register.php" method="POST">

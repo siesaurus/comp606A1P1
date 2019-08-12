@@ -1,6 +1,3 @@
 </body>
 </html>
-<?php
-
-session_write_close();
-?>
+<?php session_write_close(); ?>

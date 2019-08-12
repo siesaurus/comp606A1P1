@@ -18,6 +18,4 @@ if ($mysqli == false) {
 
 //reports all errors
 error_reporting(E_ALL);
-
-
 ?>
